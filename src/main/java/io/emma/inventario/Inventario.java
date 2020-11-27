@@ -1,7 +1,9 @@
 package io.emma.inventario;
 
+
 import io.emma.inventario.model.Herramienta;
 import io.emma.inventario.util.DataBaseConnectionUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -18,12 +20,12 @@ public class Inventario {
         }catch (ClassNotFoundException exeptionClass){
             System.out.println("{\n" +
                     "  \"statusCode\": 500,\n" +
-                    "  \"message\": \"No se pudo cargar eldriver\"\n" +
+                    "  \"message\": \"No se pudo cargar el driver\"\n" +
                     "}");
         }catch (SQLException exeptionSql){
             System.out.println("{\n" +
                     "  \"statusCode\": 500,\n" +
-                    "  \"message\": \"NNo se pudo conectar a la based de datos\"\n" +
+                    "  \"message\": \"No se pudo conectar a la based de datos\"\n" +
                     "}");
         }
 

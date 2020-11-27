@@ -8,13 +8,17 @@ import java.sql.SQLException;
 public class DataBaseConnectionUtils {
 
     private static Connection conexion = null;
-
+    private static final String URLCONEXION = new StringBuilder().append("jdbc:mysql://localhost:3306/inventario?")
+            .append("useUnicode=true").append("&useJDBCCompliantTimezoneShift=true")
+            .append("&useLegacyDatetimeCode=false").append("&serverTimezone=UTC").toString();
+    private static  final String USER = "root";
+    private static  final String PASWORD = "1234567";
     public static Connection getConnection () throws SQLException,  ClassNotFoundException{
         if(conexion == null){
-            Class.forName("com.mysql.jdbc.Driver");
+           // Class.forName("com.mysql.jdbc.Driver"); No necesario para java 7 en adelante solo jdbc
             conexion= DriverManager.getConnection(
                     //? nombre base de datos, ?usuario, ?contrasena
-                    "jdbc:mysql://localhost:3306/inventario","root","1234567");
+                    URLCONEXION,USER,PASWORD);
         }
         return conexion;
     }

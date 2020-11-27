@@ -1,6 +1,10 @@
 
-Z	java:S106'"9Replace this use of System.out or System.err by a logger.(ÉòüÜùÿÿÿÿ8ÖÛÜÅŞ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Â«Üışÿÿÿÿ8ö¶ÅŞ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Â«Üışÿÿÿÿ8·ÅŞ.
+c
+java:S1128"ARemove this unused import 'org.apache.commons.lang3.StringUtils'.(Øœ¼ºúÿÿÿÿ8ö…û¿ß.
 i
-java:S2095 "GUse try-with-resources or close this "Statement" in a "finally" clause.(Ö´†“ÿÿÿÿÿ8°øÏÅŞ.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Â«Üışÿÿÿÿ8·ÅŞ.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Â«Üışÿÿÿÿ8ö¶ÅŞ.
+java:S2095""GUse try-with-resources or close this "Statement" in a "finally" clause.(Ö´†“ÿÿÿÿÿ8°øÏÅŞ.
+Z	java:S106)"9Replace this use of System.out or System.err by a logger.(ÉòüÜùÿÿÿÿ8ÖÛÜÅŞ.
+h
+java:S2259""FA "NullPointerException" could be thrown; "conexion" is nullable here.(Ö´†“ÿÿÿÿÿ8¾ËÿêŞ.
