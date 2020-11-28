@@ -13,7 +13,7 @@ public class DataBaseConnectionUtils {
             .append("&useLegacyDatetimeCode=false").append("&serverTimezone=UTC").toString();
     private static  final String USER = "root";
     private static  final String PASWORD = "1234567";
-    public static Connection getConnection () throws SQLException,  ClassNotFoundException{
+    public static Connection getConnection () throws SQLException{
         if(conexion == null){
            // Class.forName("com.mysql.jdbc.Driver"); No necesario para java 7 en adelante solo jdbc
             conexion= DriverManager.getConnection(

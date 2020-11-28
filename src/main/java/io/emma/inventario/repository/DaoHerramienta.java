@@ -16,6 +16,7 @@ public class DaoHerramienta implements Dao<Herramienta>{
     private static final String SELECT_BY_ID = "SELECT * FROM HERRAMIENTAS WHERE id = ?";
     private static final String INSERT = "INSERT INTO HERRAMIENTAS(nombre, cantidad, categoria) values(?, ?, ?)";
     private static final String DELETE = "DELETE FROM HERRAMIENTAS WHERE id = ?";
+    private static  final String UPDATE = "UPDATE HERRAMIENTAS SET nombre = ?, cantidad = ?, categoria = ? WHERE id = ?";
 
     private Connection connection;
 
@@ -54,13 +55,13 @@ public class DaoHerramienta implements Dao<Herramienta>{
     }
 
     @Override
-    public Herramienta get(Herramienta item) throws DaoException {
+    public Herramienta get(Herramienta herramienta1) throws DaoException {
         PreparedStatement statement = null;
         ResultSet resultSet = null;
         Herramienta herramienta = null;
         try {
             statement = connection.prepareStatement(SELECT_BY_ID);
-            statement.setInt(1, item.getId());
+            statement.setInt(1, herramienta1.getId());
             statement.executeQuery();
             resultSet = statement.getResultSet();
             if (resultSet.next()) {
@@ -105,15 +106,16 @@ public class DaoHerramienta implements Dao<Herramienta>{
     }
 
     @Override
-    public boolean delete(Herramienta item) throws DaoException {
+    public boolean delete(Herramienta herramienta) throws DaoException {
         int registosModificador;
         PreparedStatement statement = null;
 
         try {
             statement = connection.prepareStatement(DELETE);
+            statement.setInt(1, herramienta.getId());
             registosModificador = statement.executeUpdate();
         } catch (SQLException throwables) {
-            throw new DaoException("Fail while getting al the tools", throwables);
+            throw new DaoException("Fail while at deleting id", throwables);
         } finally {
             try {
 
@@ -126,8 +128,26 @@ public class DaoHerramienta implements Dao<Herramienta>{
     }
 
     @Override
-    public boolean update(Herramienta currectItem, Herramienta newItem) throws DaoException {
-        return false;
-    }
+    public boolean update(Herramienta herramientaActual, Herramienta nuevaHerramienta) throws DaoException {
+        int registosModificador;
+        PreparedStatement statement = null;
 
+        try {
+            statement = connection.prepareStatement(UPDATE);
+            statement.setInt(4, herramientaActual.getId());
+            statement.setString(1, nuevaHerramienta.getNombre());
+            statement.setInt(2, nuevaHerramienta.getCantidad());
+            statement.setString(3, nuevaHerramienta.getCategoria());
+            registosModificador = statement.executeUpdate();
+        } catch (SQLException throwables) {
+            throw new DaoException("Fail while updating", throwables);
+        } finally {
+            try {
+                statement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return registosModificador !=0;
+    }
 }

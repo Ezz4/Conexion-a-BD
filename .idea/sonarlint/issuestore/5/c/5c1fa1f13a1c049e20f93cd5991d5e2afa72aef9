@@ -1,10 +1,31 @@
 
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Â«Üışÿÿÿÿ8ö¶ÅŞ.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Â«Üışÿÿÿÿ8·ÅŞ.
 c
-java:S1128"ARemove this unused import 'org.apache.commons.lang3.StringUtils'.(Øœ¼ºúÿÿÿÿ8ö…û¿ß.
-i
-java:S2095""GUse try-with-resources or close this "Statement" in a "finally" clause.(Ö´†“ÿÿÿÿÿ8°øÏÅŞ.
-Z	java:S106)"9Replace this use of System.out or System.err by a logger.(ÉòüÜùÿÿÿÿ8ÖÛÜÅŞ.
-h
-java:S2259""FA "NullPointerException" could be thrown; "conexion" is nullable here.(Ö´†“ÿÿÿÿÿ8¾ËÿêŞ.
+java:S1128"ARemove this unused import 'org.apache.commons.lang3.StringUtils'.(Øœ¼ºúÿÿÿÿ8ö…û¿ß.
+Z	java:S106."9Replace this use of System.out or System.err by a logger.(ŸÖÏÁûÿÿÿÿ8µÔöºà.
+Z	java:S106B"9Replace this use of System.out or System.err by a logger.(áºšùÿÿÿÿ8ÎÛÔ¼à.
+U	java:S106F"9Replace this use of System.out or System.err by a logger.(Î¹Ä¬8ñÅİ¼à.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ğÈó€şÿÿÿÿ8µ®ºà.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(¼¼Şï8éŞ±ºà.
+U	java:S106O"9Replace this use of System.out or System.err by a logger.(ŞÈ£ù8®êœ¼à.
+Z	java:S106R"9Replace this use of System.out or System.err by a logger.(ßªöĞûÿÿÿÿ8®êœ¼à.
+Z	java:S106="9Replace this use of System.out or System.err by a logger.(Íò›Ğşÿÿÿÿ8Å¤Ó¼à.
+Z	java:S106@"9Replace this use of System.out or System.err by a logger.(ˆíÌ÷øÿÿÿÿ8ô®Æ¼à.
+Z	java:S1061"9Replace this use of System.out or System.err by a logger.(â¦…Àıÿÿÿÿ8Üç§»à.
+K
+java:S1128"/Remove this unused import 'java.sql.ResultSet'.(ˆóÚw8·ñŠºà.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ù° Â8‘Ã¡ºà.
+L
+java:S1128"/Remove this unused import 'java.sql.Statement'.(ÏÖÔø8·ñŠºà.
+T	java:S106"9Replace this use of System.out or System.err by a logger.(Ü†û^8™æ¯ºà.
+U	java:S1064"9Replace this use of System.out or System.err by a logger.(¸à„ï8§è°»à.
+Z	java:S106U"9Replace this use of System.out or System.err by a logger.(ëÛŞ±şÿÿÿÿ8®êœ¼à.
+U	java:S106:"9Replace this use of System.out or System.err by a logger.(…›éŠ8…Ÿ›¼à.
+Z	java:S106Z"9Replace this use of System.out or System.err by a logger.(çÉ‚úÿÿÿÿ8®êœ¼à.
+Q
+java:S1128"/Remove this unused import 'java.sql.SQLOutput'.(ê¤òÃùÿÿÿÿ8Ûµºà.
+Z	java:S106]"9Replace this use of System.out or System.err by a logger.(ê¾ÍŠúÿÿÿÿ8®êœ¼à.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(‘¼Ò°8Ûµºà.
+Z	java:S106J"9Replace this use of System.out or System.err by a logger.(ê‚šÿÿÿÿÿ8®êœ¼à.
+Z	java:S1067"9Replace this use of System.out or System.err by a logger.(ÏßÄÀüÿÿÿÿ8™×Â»à.
+U	java:S106M"9Replace this use of System.out or System.err by a logger.(¼àŒÏ8®êœ¼à.
+Z	java:S106+"9Replace this use of System.out or System.err by a logger.(öÿåŞøÿÿÿÿ8óœéºà.

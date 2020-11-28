@@ -1,5 +1,7 @@
 package io.emma.inventario.model;
 
+import java.util.Objects;
+
 public class Herramienta {
 
     private int id;
@@ -13,7 +15,15 @@ public class Herramienta {
         this.cantidad = cantidad;
         this.categoria = categoria;
     }
+    public Herramienta(String nombre, int cantidad, String categoria){
 
+        this.nombre = nombre;
+        this.cantidad = cantidad;
+        this.categoria = categoria;
+    }
+    public Herramienta(int id){
+        this.id = id;
+    }
     public int getId() {
         return id;
     }
@@ -55,5 +65,7 @@ public class Herramienta {
                 ", categoria='" + categoria + '\'' +
                 '}';
     }
+
+
 }
 
